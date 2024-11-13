@@ -5,11 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoreDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="450"
+        Width="800"
+>
     <Grid>
+        <TextBox Text="{Binding Path=Message, Mode=TwoWay}" HorizontalAlignment="Left" Margin="25,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" Height="194" FontSize="16"/>
 
-        <TextBlock Text="{Binding Message}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button Content="Display Message" Click="OnButtonClick" HorizontalAlignment="Left" Margin="576,361,0,0" VerticalAlignment="Top"/>
+        <Button Content="Clear" Click="OnClearButtonClick" HorizontalAlignment="Left" Margin="25,235,0,0" VerticalAlignment="Top" Width="89"/>
+
+        <Button Content="Display Hello World" Click="OnDisplayHelloWorldButtonClick" HorizontalAlignment="Left" Margin="128,235,0,0" VerticalAlignment="Top"/>
+        <Button Content="Display Network Info" Click="OnDisplayNetworkInfoButtonClick" HorizontalAlignment="Left" Margin="376,235,0,0" VerticalAlignment="Top" Width="131"/>
 
     </Grid>
 </Window>

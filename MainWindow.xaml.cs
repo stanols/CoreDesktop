@@ -9,6 +9,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Net;
 
 namespace CoreDesktop
 {
@@ -17,19 +19,39 @@ namespace CoreDesktop
 	/// </summary>
 	public partial class MainWindow : Window
 	{
-		public TextBlock TextBlock { get; set; }
-		public string Message { get; set; }
+		private MainWindowDataContext _dataContext;
 
 		public MainWindow()
 		{
-			DataContext = this;
-			TextBlock = new TextBlock();
 			InitializeComponent();
+
+			_dataContext = new MainWindowDataContext();
+
+			DataContext = _dataContext;
 		}
 
-		public void OnButtonClick(object sender, RoutedEventArgs e)
+		public void OnClearButtonClick(object sender, RoutedEventArgs e)
 		{
-			MessageBox.Show("Hello, Natashka-Kakashka!");
+			_dataContext.Message = string.Empty;
+		}
+
+		public void OnDisplayHelloWorldButtonClick(object sender, RoutedEventArgs e)
+		{
+			_dataContext.Message = "Hello, world!";
+		}
+
+		public void OnDisplayNetworkInfoButtonClick(object sender, RoutedEventArgs e)
+		{
+			var hostName = Dns.GetHostName();
+			var hostEntry = Dns.GetHostEntry(hostName);
+			var ipAddressEntry = hostEntry.AddressList.FirstOrDefault();
+			var ipAddress = ipAddressEntry?.ToString();
+
+			var stringBuilder = new StringBuilder();
+			stringBuilder.AppendLine(hostName);
+			stringBuilder.AppendLine(ipAddress);
+
+			_dataContext.Message = stringBuilder.ToString();
 		}
 	}
 }
