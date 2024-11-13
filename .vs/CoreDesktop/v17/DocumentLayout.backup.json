@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "D:\\Projects\\CoreDesktop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E1A5F733-B443-4679-86AD-F4C181AAB90E}|CoreDesktop.csproj|d:\\projects\\coredesktop\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E1A5F733-B443-4679-86AD-F4C181AAB90E}|CoreDesktop.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E1A5F733-B443-4679-86AD-F4C181AAB90E}|CoreDesktop.csproj|d:\\projects\\coredesktop\\coredesktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E1A5F733-B443-4679-86AD-F4C181AAB90E}|CoreDesktop.csproj|solutionrelative:coredesktop.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,14 +19,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Projects\\CoreDesktop\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\Projects\\CoreDesktop\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-10T21:49:21.682Z",
+              "Title": "CoreDesktop",
+              "DocumentMoniker": "D:\\Projects\\CoreDesktop\\CoreDesktop.csproj",
+              "RelativeDocumentMoniker": "CoreDesktop.csproj",
+              "ToolTip": "D:\\Projects\\CoreDesktop\\CoreDesktop.csproj",
+              "RelativeToolTip": "CoreDesktop.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-11T14:15:27.285Z",
               "EditorCaption": ""
             }
           ]

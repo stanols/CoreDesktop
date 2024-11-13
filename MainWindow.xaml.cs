@@ -8,6 +8,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.ComponentModel;
 
 namespace CoreDesktop
 {
@@ -16,9 +17,19 @@ namespace CoreDesktop
 	/// </summary>
 	public partial class MainWindow : Window
 	{
+		public TextBlock TextBlock { get; set; }
+		public string Message { get; set; }
+
 		public MainWindow()
 		{
+			DataContext = this;
+			TextBlock = new TextBlock();
 			InitializeComponent();
+		}
+
+		public void OnButtonClick(object sender, RoutedEventArgs e)
+		{
+			MessageBox.Show("Hello, Natashka-Kakashka!");
 		}
 	}
 }
